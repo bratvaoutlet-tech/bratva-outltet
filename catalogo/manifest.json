@@ -1,0 +1,26 @@
+{
+  "name": "Bratva Outlet — Revendedores",
+  "short_name": "Bratva Rev",
+  "description": "Catálogo exclusivo para revendedores Bratva Outlet",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#6C27C0",
+  "background_color": "#0C0917",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "lang": "pt-BR"
+}
