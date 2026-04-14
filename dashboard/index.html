@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bratva Outlet - Painel</title>
 
-  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Chart.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 
   <style>
@@ -28,87 +25,34 @@
       font-family: 'Syne', sans-serif;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-
     .card {
       background: #121826;
       padding: 20px;
       border-radius: 12px;
-    }
-
-    .card h2 {
-      margin: 0;
-      font-size: 14px;
-      opacity: 0.7;
-    }
-
-    .card p {
-      font-size: 22px;
-      margin-top: 8px;
+      margin-bottom: 10px;
     }
 
     canvas {
-      margin-top: 30px;
+      margin-top: 20px;
       background: #121826;
       padding: 10px;
       border-radius: 12px;
-    }
-
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 12px 20px;
-      background: linear-gradient(90deg, #6c2bd9, #8b5cf6);
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>📊 Dashboard</h1>
+    <h1>Dashboard</h1>
 
-    <div class="cards">
-      <div class="card">
-        <h2>Faturamento</h2>
-        <p id="faturamento">R$ 0</p>
-      </div>
-
-      <div class="card">
-        <h2>Pedidos</h2>
-        <p id="pedidos">0</p>
-      </div>
-
-      <div class="card">
-        <h2>Lucro</h2>
-        <p id="lucro">R$ 0</p>
-      </div>
-    </div>
+    <div class="card">Faturamento: R$ 1250</div>
+    <div class="card">Pedidos: 8</div>
+    <div class="card">Lucro: R$ 520</div>
 
     <canvas id="grafico"></canvas>
-
-    <a href="../index.html" class="btn">⬅ Voltar</a>
   </div>
 
   <script>
-    // Dados fake (depois podemos ligar no seu sistema)
-    const faturamento = 1250;
-    const pedidos = 8;
-    const lucro = 520;
-
-    document.getElementById("faturamento").innerText = "R$ " + faturamento;
-    document.getElementById("pedidos").innerText = pedidos;
-    document.getElementById("lucro").innerText = "R$ " + lucro;
-
-    // Gráfico
     const ctx = document.getElementById('grafico');
 
     new Chart(ctx, {
@@ -117,11 +61,10 @@
         labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex'],
         datasets: [{
           label: 'Vendas',
-          data: [200, 300, 150, 400, 250],
+          data: [200, 300, 150, 400, 250]
         }]
       }
     });
   </script>
 </body>
 </html>
-```
